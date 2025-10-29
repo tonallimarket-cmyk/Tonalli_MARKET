@@ -1,0 +1,259 @@
+/* ================================
+   Reset y fuente base
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f7;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* ================================
+   Encabezado 
+================================ */
+.encabezado {
+  background-color: #279fa1;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.texto-header h1 {
+  font-size: 1.5rem;
+}
+
+.texto-header p {
+  font-size: 0.9rem;
+  margin-top: 3px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #1a7102;
+}
+
+/* ================================
+  Banner
+================================ */
+.hero {
+  background-image: url('BANNER.jpeg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 80px 20px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background-color: #f2c73b;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.hero button:hover {
+  background-color: #90c0fb;
+}
+
+/* ================================
+   Productos 
+================================ */
+.productos {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.productos h2 {
+  color: #0048ff;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: rgb(244, 229, 169);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #212422;
+}
+
+.card p {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.card span {
+  font-weight: bold;
+  color: #ff5722;
+  font-size: 1rem;
+}
+
+.card button {
+  margin-top: 10px;
+  background: #04eded;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card button:hover {
+  background: #12e7d5;
+}
+
+/* ================================
+   Productos adicionales
+================================ */
+.productos .card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.productos .card span {
+  font-weight: bold;
+  color: #ff5722;
+  font-size: 1rem;
+}
+
+.productos .card button {
+  margin-top: 10px;
+  background: #ff9e5e;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.productos .card button:hover {
+  background: #218838;
+}
+
+/* ================================
+   Ofertas
+================================ */
+.ofertas {
+  background-color: #fff4e5;
+  color: #0048ff;
+  font-weight: bold;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.ofertas img {
+  max-width: 30%;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.ofertas p {
+  margin: 10px 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+
+/* ================================
+   Footer
+================================ */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
